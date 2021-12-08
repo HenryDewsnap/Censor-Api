@@ -3,7 +3,6 @@ from flask_restful import Resource, Api
 
 ##Change this if necessary
 returnCensored = True
-pathToWordDir = "files/"
 censorChar = "*"
 diameter = "_" #Your call to the API must be formatted with space bars replaced with this.
 
