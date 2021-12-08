@@ -1,4 +1,3 @@
-from types import TracebackType
 from flask import Flask, request
 from flask_restful import Resource, Api
 
@@ -69,7 +68,7 @@ class thoroughCheck(Resource):
                 censored = True
                 output += f"{censorChar}" * len(word)
                 if wprt != len(message.split(diameter)): output += " "
-                
+
                 continue
             output += word
         if returnCensored == True: return output
