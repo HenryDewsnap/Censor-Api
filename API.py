@@ -45,10 +45,9 @@ class quickCheck(Resource):
             if isWordAllowed(word) == False:
                 censored = True
                 output += f"{censorChar}" * len(word)
-                if wprt != len(message.split(diameter)): output += " "
 
-                continue
-            output += word
+            else: output += word
+            if wprt != len(message.split(diameter)): output += " "
         if returnCensored == True: return output
         else:
             if censored == True: return "Censored"
@@ -66,10 +65,9 @@ class thoroughCheck(Resource):
             if isWordAllowed(replaceAlternatives((word))) == False: 
                 censored = True
                 output += f"{censorChar}" * len(word)
-                if wprt != len(message.split(diameter)): output += " "
 
-                continue
-            output += word
+            else: output += word
+            if wprt != len(message.split(diameter)): output += " "
         if returnCensored == True: return output
         else: 
             if censored == True: return "Censored"
