@@ -16,8 +16,6 @@ disallowed   = ["frick"]
 replacements = {"!":"i"}
 
 
-def log(msg): print(f"[Censor Api]: {msg}")
-
 #Alone this is not very thorough and is easily bypassed.
 def isWordAllowed(word):
     if word.lower() in disallowed: 
@@ -77,5 +75,4 @@ api.add_resource(quickCheck, "/QCheck/<message>")    #End Point -1
 api.add_resource(thoroughCheck, "/TCheck/<message>") #End Point -2
 
 if __name__ == "__main__":
-    log(f"server starting on PORT: {PORT}")
     app.run(port=PORT)
