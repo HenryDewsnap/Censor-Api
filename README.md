@@ -34,3 +34,8 @@ print(r.text)
 ### API End Points:
 - **/QCheck/MESSAGE** : QCheck AKA Quick check is the fastest API endpoint as it does no modulation to the string to check for potential censorship evasion.
 - **/TCheck/MESSAGE** : TCheck AKA thorough check is the slower of the API endpoints as it modulates the string to detect potential censorship evasion.
+<hr>
+
+<div align="center">
+  Written, developed and designed by Henry Dewsnap.
+</div>
