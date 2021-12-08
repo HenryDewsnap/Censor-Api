@@ -15,7 +15,6 @@ api = Api(app)
 disallowed   = ["frick"]
 replacements = {"!":"i"}
 
-
 #Alone this is not very thorough and is easily bypassed.
 def isWordAllowed(word):
     if word.lower() in disallowed: 
@@ -39,7 +38,6 @@ class quickCheck(Resource):
         censored = False
         for word in message.split(diameter):
             wprt += 1
-
             if isWordAllowed(word) == False:
                 censored = True
                 output += f"{censorChar}" * len(word)
@@ -59,7 +57,6 @@ class thoroughCheck(Resource):
         censored = False
         for word in message.split(diameter):
             wprt += 1
-
             if isWordAllowed(replaceAlternatives((word))) == False: 
                 censored = True
                 output += f"{censorChar}" * len(word)
