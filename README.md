@@ -13,7 +13,7 @@ RESPONSE: MESSAGE
 ### Example 2:
 ```
 Example Api Call (USING CURL):
-COMMAND:  curl 127.0.0.1:PORT/QCheck/"BLACKLISTEDWORD you"
+COMMAND:  curl 127.0.0.1:PORT/QCheck/"BLACKLISTEDWORD_you"
 RESPONSE: "***** you"
 ```
 ### Example 3:
